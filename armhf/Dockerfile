@@ -15,6 +15,8 @@
 FROM resin/armv7hf-debian:stretch
 MAINTAINER Rolf Larsen
 
+COPY ./qemu-arm-static /usr/bin/qemu-arm-static
+
 LABEL Description="This image is used to start a script that will monitor for events on 433,92 Mhz" Vendor="MarCoach" Version="1.0"
 
 #
